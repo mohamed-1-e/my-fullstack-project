@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exam Creation</title>
+  <link rel="stylesheet" href="css/exam-css.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Exam Creation</h1>
+    <form class="exam-form">
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" type="text" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" rows="2" placeholder=""></textarea>
+      </div>
+      <div class="form-group">
+        <label for="audience">Target Audience</label>
+        <input id="audience" type="text" placeholder="2nd year MIP, S4, group A" />
+      </div>
+      <div class="form-group">
+        <label for="link">Unique Access Link</label>
+        <input id="link" type="url" placeholder="https://example.com/abc123" />
+      </div>
+
+      <fieldset class="questions-section">
+        <legend>Questions</legend>
+        <div class="question-card">
+          <div class="question-header">Direct Question</div>
+          <div class="form-group">
+            <label for="statement">What is the derivative of <em>x³</em>?</label>
+            <textarea id="statement" rows="2"></textarea>
+            <div class="media-icons">
+              <button type="button" class="icon-btn">📷</button>
+              <button type="button" class="icon-btn">🎤</button>
+              <button type="button" class="icon-btn">📹</button>
+            </div>
+          </div>
+          <div class="inline-group">
+            <div class="form-group small">
+              <label for="answer">Answer</label>
+              <input id="answer" type="text" value="3x²" />
+            </div>submit
+            <div class="form-group tiny">
+              <label for="tolerance">Tolerance</label>
+              <div class="input-with-suffix">
+                <input id="tolerance" type="number" value="10" />
+                <span class="suffix">%</span>
+              </div>
+            </div>
+            <div class="form-group tiny">
+              <label for="grade">Grade</label>
+              <input id="grade" type="number" value="10" />
+            </div>
+            <div class="form-group small">
+              <label for="duration">Duration (s)</label>
+              <input id="duration" type="number" value="120" />
+            </div>
+          </div>
+          <div class="button-group">
+            <button type="button" class="btn edit">Edit</button>
+            <button type="button" class="btn delete">Delete</button>
+          </div>
+        </div>
+        <button type="button" class="btn add-question">+ Add Question</button>
+      </fieldset>
+
+      <button type="submit" class="btn submit">Save Exam</button>
+      <button type="submit" class="btn "><a  href="teatcher.html">back</a></button>
+
+    </form>
+  </div>
+</body>
+</html>

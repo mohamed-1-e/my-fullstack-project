@@ -1,0 +1,118 @@
+/* ========== Reset & Base ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* ========== Sidebar ========== */
+  .sidebar {
+    width: 280px;
+    background-color: #5995fd;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  .sidebar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .sidebar .logo i {
+    font-size: 1.8rem;
+  }
+  .sidebar .nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .sidebar .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    position: relative;
+  }
+  .sidebar .nav a:hover{
+    background-color: rgb(89, 89, 212);
+    border-radius: 15px;
+  }
+  .sidebar .nav a::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+  }
+  .sidebar .social {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .sidebar .social a {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .sidebar .footer {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  /* ========== Main Content ========== */
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+  .text-content {
+    max-width: 450px;
+  }
+  .subtitle {
+    color: #88c399;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .highlight {
+    color: #5995fd;
+  }
+  .description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: #5995fd;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.15rem;
+  }
+  .btn:hover{
+
+    background-color: #4481eb;
+  }
